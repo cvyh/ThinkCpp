@@ -1,36 +1,36 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Sales_item.h"
 
 int main() {
-	Sales_item aBook;//´´½¨Sales_itemÀàĞÍµÄ±äÁ¿
-	std::cout << "ÊäÈëÒ»±¾ÊéµÄÏúÊÛĞÅÏ¢£¨ISBN¡¢ÊÛ³ö²áÊıÒÔ¼°ÊÛ¼Û£©" << std::endl;
+	Sales_item aBook;//åˆ›å»ºSales_itemç±»å‹çš„å˜é‡
+	std::cout << "è¾“å…¥ä¸€æœ¬ä¹¦çš„é”€å”®ä¿¡æ¯ï¼ˆISBNã€å”®å‡ºå†Œæ•°ä»¥åŠå”®ä»·ï¼‰" << std::endl;
 	if (std::cin >> aBook) {
 		Sales_item anotherBook;
-		std::cout << "ÊäÈëÁíÒ»±¾ÊéµÄÏúÊÛĞÅÏ¢£¨ISBN¡¢ÊÛ³ö²áÊıÒÔ¼°ÊÛ¼Û£©" << std::endl;
+		std::cout << "è¾“å…¥å¦ä¸€æœ¬ä¹¦çš„é”€å”®ä¿¡æ¯ï¼ˆISBNã€å”®å‡ºå†Œæ•°ä»¥åŠå”®ä»·ï¼‰" << std::endl;
 		while (std::cin >> anotherBook) {
-			//ÅĞ¶ÏÁ½´ÎÊäÈëµÄÊÇ·ñÊÇÍ¬Ò»±¾
+			//åˆ¤æ–­ä¸¤æ¬¡è¾“å…¥çš„æ˜¯å¦æ˜¯åŒä¸€æœ¬
 			if (aBook.isbn() == anotherBook.isbn()) {
-				aBook += anotherBook;//Á½±¾ÊéµÄÏà¹ØĞÅÏ¢ºÏ²¢ÆğÀ´
+				aBook += anotherBook;//ä¸¤æœ¬ä¹¦çš„ç›¸å…³ä¿¡æ¯åˆå¹¶èµ·æ¥
 			}
 			else {
-				//Èç¹û²»ÏàµÈ
+				//å¦‚æœä¸ç›¸ç­‰
 				std::cout << aBook << std::endl;
-				aBook = anotherBook;//¿ªÊ¼½«ÁíÒ»±¾Êé×÷Îª¶Ô±ÈµÄ±ê×¼½øĞĞÅĞ¶Ï
+				aBook = anotherBook;//å¼€å§‹å°†å¦ä¸€æœ¬ä¹¦ä½œä¸ºå¯¹æ¯”çš„æ ‡å‡†è¿›è¡Œåˆ¤æ–­
 			}
 		}
-		//Ñ­»·½áÊø
+		//å¾ªç¯ç»“æŸ
 		std::cout << aBook << std::endl;
 	}
 	else
 	{
-		std::cerr << "Ã»ÓĞÊı¾İšG£¡" << std::endl;
+		std::cerr << "æ²¡æœ‰æ•°æ®æ¬¸ï¼" << std::endl;
 		return -1;
 	}
 	//std::cin >> aBook1 >> aBook2;
 
-	//std::cout << "Õâ±¾ÊéµÄISBN£¬ÒÔ¼°µÚÒ»´ÎµÄÊÛ³ö²áÊı¡¢ÊÛ¼ÛºÍÆ½¾ù¼Û¸ñÊÇ£º" << aBook1 << std::endl;
+	//std::cout << "è¿™æœ¬ä¹¦çš„ISBNï¼Œä»¥åŠç¬¬ä¸€æ¬¡çš„å”®å‡ºå†Œæ•°ã€å”®ä»·å’Œå¹³å‡ä»·æ ¼æ˜¯ï¼š" << aBook1 << std::endl;
 
-	//std::cout << "Õâ±¾ÊéµÄISBN£¬ÒÔ¼°ÕâÁ½´ÎµÄÊÛ³ö×ÜÊı¡¢×Ü¼ÛºÍÆ½¾ù¼Û¸ñÊÇ£º" << aBook1 + aBook2 << std::endl;
+	//std::cout << "è¿™æœ¬ä¹¦çš„ISBNï¼Œä»¥åŠè¿™ä¸¤æ¬¡çš„å”®å‡ºæ€»æ•°ã€æ€»ä»·å’Œå¹³å‡ä»·æ ¼æ˜¯ï¼š" << aBook1 + aBook2 << std::endl;
 
 	int pause;
 	std::cin >> pause;

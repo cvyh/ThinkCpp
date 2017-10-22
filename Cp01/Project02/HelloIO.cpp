@@ -1,32 +1,32 @@
-#include <iostream>
+ï»¿#include <iostream>
 int main() {
-	std::cout << "ÕâÊÇc-outµÄÐ§¹û£¬¼´Êä³öÒ»¾ä»°£¬ºóÃæ¼ÓÉÏendl" << std::endl;
-	std::cout << "Õâ¾ä»»ÐÐÁË£¬ÒòÎªÉÏÃæ¼ÓÉÏÁËendl£¨È«³ÆÓ¦¸ÃÊÇendline£©£»Õâ¾ä½áÊø";
-	std::cout << "ÉÏÒ»¾äÃ»ÓÐÓÃendlÓÚÊÇºó¹ûºÜÃ÷ÏÔ£¬ËùÒÔ¾ÍÃ»ÓÐ»»ÐÐ¡£" << std::endl;
+	std::cout << "è¿™æ˜¯c-outçš„æ•ˆæžœï¼Œå³è¾“å‡ºä¸€å¥è¯ï¼ŒåŽé¢åŠ ä¸Šendl" << std::endl;
+	std::cout << "è¿™å¥æ¢è¡Œäº†ï¼Œå› ä¸ºä¸Šé¢åŠ ä¸Šäº†endlï¼ˆå…¨ç§°åº”è¯¥æ˜¯endlineï¼‰ï¼›è¿™å¥ç»“æŸ";
+	std::cout << "ä¸Šä¸€å¥æ²¡æœ‰ç”¨endläºŽæ˜¯åŽæžœå¾ˆæ˜Žæ˜¾ï¼Œæ‰€ä»¥å°±æ²¡æœ‰æ¢è¡Œã€‚" << std::endl;
 
 	int pause;
 	std::cin >> pause;
 
 }
 
-//µÚÒ»¾ä#include <iostream>£¬¸æËß±àÒëÆ÷ÎÒÃÇ½«ÒªÓÃiostream¿â¡£
-//¼âÀ¨ºÅÀïÃæÊÇÍ·ÎÄ¼þµÄÃû×Ö¡£
-//Ò»°ãÇé¿öÏÂinclude¶¼·ÅÔÚÔ´ÎÄ¼þ×î¿ªÊ¼µÄµØ·½
+//ç¬¬ä¸€å¥#include <iostream>ï¼Œå‘Šè¯‰ç¼–è¯‘å™¨æˆ‘ä»¬å°†è¦ç”¨iostreamåº“ã€‚
+//å°–æ‹¬å·é‡Œé¢æ˜¯å¤´æ–‡ä»¶çš„åå­—ã€‚
+//ä¸€èˆ¬æƒ…å†µä¸‹includeéƒ½æ”¾åœ¨æºæ–‡ä»¶æœ€å¼€å§‹çš„åœ°æ–¹
 
-//iostream¿âÀï°üº¬Á½¸ö»ù´¡ÀàÐÍ£ºistreamÊäÈëÁ÷ºÍostreamÊä³öÁ÷
-//±ê×¼¿â¶¨ÒåÁËËÄ¸öIO¶ÔÏó£¬ÊäÈëcin£¬Êä³öcout£»¾¯¸æcerr£¬Ò»°ãÐÅÏ¢clog¡£
+//iostreamåº“é‡ŒåŒ…å«ä¸¤ä¸ªåŸºç¡€ç±»åž‹ï¼šistreamè¾“å…¥æµå’Œostreamè¾“å‡ºæµ
+//æ ‡å‡†åº“å®šä¹‰äº†å››ä¸ªIOå¯¹è±¡ï¼Œè¾“å…¥cinï¼Œè¾“å‡ºcoutï¼›è­¦å‘Šcerrï¼Œä¸€èˆ¬ä¿¡æ¯clogã€‚
 
-//ÏòÁ÷ÖÐÐ´ÈëÊý¾Ý£º
-// <<ÊÇÊä³öÔËËã·û£¬×ó²àÊÇostream¶ÔÏó£¬ÓÒ²àÊÇÒª´òÓ¡µÄÖµ£»ÔËËã½á¹ûÈÔÊÇ×ó²à¶ÔÏó¡£
-//endlÊÇ²Ù×Ý·û£¬Ð§¹û£º½áÊøµ±Ç°ÐÐ£¬²¢½«ÓëÉè±¸¹ØÁªµÄ»º³åÇøÖÐµÄÄÚÈÝË¢µ½Éè±¸ÖÐ
+//å‘æµä¸­å†™å…¥æ•°æ®ï¼š
+// <<æ˜¯è¾“å‡ºè¿ç®—ç¬¦ï¼Œå·¦ä¾§æ˜¯ostreamå¯¹è±¡ï¼Œå³ä¾§æ˜¯è¦æ‰“å°çš„å€¼ï¼›è¿ç®—ç»“æžœä»æ˜¯å·¦ä¾§å¯¹è±¡ã€‚
+//endlæ˜¯æ“çºµç¬¦ï¼Œæ•ˆæžœï¼šç»“æŸå½“å‰è¡Œï¼Œå¹¶å°†ä¸Žè®¾å¤‡å…³è”çš„ç¼“å†²åŒºä¸­çš„å†…å®¹åˆ·åˆ°è®¾å¤‡ä¸­
 
-//´ÓÁ÷ÖÐ¶ÁÈ¡Êý¾Ý
-// >>ÊÇÊäÈëÔËËã·û£¬×ó²àÊÇistream¶ÔÏó£¬ÓÒ²àÊÇÒª¶ÁÈëµÄ¶ÔÏó
-//ÔËËã½á¹ûÊÇistream¶ÔÏó
+//ä»Žæµä¸­è¯»å–æ•°æ®
+// >>æ˜¯è¾“å…¥è¿ç®—ç¬¦ï¼Œå·¦ä¾§æ˜¯istreamå¯¹è±¡ï¼Œå³ä¾§æ˜¯è¦è¯»å…¥çš„å¯¹è±¡
+//è¿ç®—ç»“æžœæ˜¯istreamå¯¹è±¡
 
-//¹ØÓÚstd::XXX
-// ::ÊÇÓòÔËËã·û
-// stdÊÇÃüÃû¿Õ¼ä
-// std::cout ÒâË¼¾ÍÊÇ£¬ÎÒÃÇÒªÊ¹ÓÃÒ»¸ö¶¨ÒåÔÚÃüÃû¿Õ¼ästdÖÐµÄÃû×Öcout
-//ÓÅµã£º±ÜÃâÔÚÊ¹ÓÃÀ´×Ô²»Í¬¿âÖÐµÄÏàÍ¬Ãû×ÖµÄ¶«Î÷µ¼ÖÂµÄ³åÍ»
-//È±µã£ºÂé·³
+//å…³äºŽstd::XXX
+// ::æ˜¯åŸŸè¿ç®—ç¬¦
+// stdæ˜¯å‘½åç©ºé—´
+// std::cout æ„æ€å°±æ˜¯ï¼Œæˆ‘ä»¬è¦ä½¿ç”¨ä¸€ä¸ªå®šä¹‰åœ¨å‘½åç©ºé—´stdä¸­çš„åå­—cout
+//ä¼˜ç‚¹ï¼šé¿å…åœ¨ä½¿ç”¨æ¥è‡ªä¸åŒåº“ä¸­çš„ç›¸åŒåå­—çš„ä¸œè¥¿å¯¼è‡´çš„å†²çª
+//ç¼ºç‚¹ï¼šéº»çƒ¦
